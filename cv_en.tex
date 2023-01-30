@@ -6,7 +6,7 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
 \moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
@@ -16,15 +16,15 @@
 
 % character encoding
 \usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
-%\usepackage[french]{babel}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+% \usepackage[french]{babel}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
 % \usepackage[scale=0.75]{geometry}
 \usepackage{geometry}
-\geometry{hmargin=2cm,vmargin=1.5cm}
+\geometry{hmargin=1.8cm,vmargin=1.5cm}
 \newcommand{\heart}{\ensuremath\heartsuit}
-\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+\setlength{\hintscolumnwidth}{2cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
@@ -47,17 +47,6 @@
 %\photo[64pt][0.4pt]{cvPhoto}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 %\quote{Ensemble, le mieux n'est plus l'ennemi du bien}                                 % optional, remove / comment the line if not wanted
 
-% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
-%\makeatletter
-%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
-%\makeatother
-%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
-
-% bibliography with mutiple entries
-%\usepackage{multibib}
-%\newcites{book,misc}{{Books},{Others}}
-
-%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
 %----------------------------------------------------------------------------------
 %            BEGIN
 %----------------------------------------------------------------------------------
@@ -74,6 +63,26 @@
 %            > EXPERIENCES: DEVELOPPEMENT
 %----------------------------------------------------------------------------------
 \subsection{Development}
+\cventry{2022}{Lead Full Stack Developer}{Pytheas Capital Advisors}{Biarritz \& Paris}{}{Full Stack Developer \emph{(Quarkus, NestJS, React, ClickUp, Teams)} \newline %
+	Technologies used:
+	\begin{itemize}
+		\item Javascript: Node, NestJS, Meteor, React, Apollo, XState, Emotion, Storybook, Jest, Cypress
+		\item Java: Quarkus, JUnit, RabbitMQ
+		\item DB: Mongo, PostgreSQL
+		\item DevOps: GitLab, K8s, Docker-Compose, ArgoCD
+		\item Other: ETL, Keycloak, RabbitMQ, Artillery
+	\end{itemize}
+	Responsibilities :
+	\begin{itemize}
+		\item Development of an invoice generator \emph{Factur-X – ZUGFeRD} (Java, Quarkus, RabbitMQ, REST API).
+		\item Development of a micro-service orchestrator (TypeScript, NestJS, RabbitMQ, XState).
+		\item Development of end-to-end tests of micro-services (TypeScript, RabbitMQ, Docker, GitLab).
+		\item Front-end \& back-end development of the application (React, Meteor, Apollo, Cypress).
+		\item Writing of tests \emph{Cypress, JUnit, Jest, Mocha, ...} \& optimization of legacy requests \emph{Mongo}.
+		\item Mentorship and participation in the technical development of two developers and of the Project Owner.
+		\item Project Management in 'SCRUM' mode with ClickUp.
+	\end{itemize}
+}
 \cventry{2019-2021}{Lead Front-end Developer}{Syment}{Bayonne}{\emph{Remote work}}{Front-end Developer and Project Manager \emph{(React, Redux, XState, Tailwind, Storybook, Jest, Jira, Slack)}\newline
 	Responsibilities :
 	\begin{itemize}
@@ -94,10 +103,17 @@
 		\item Participated in the implementation and broadcast of security guidelines.
 	\end{itemize}
 }
-
 \cventry{2018}{Hybrid Web Developer}{Glorytech}{Bidart}{}{Full-stack Developer \emph{(Node, React, Cordova, Docker).}}
 % \cventry{2018}{Développeur web front-end}{Ariane Avocats}{Remote (Bidart - Bergerac)}{}{Développement du site vitrine du cabinet d'avocats.}
-
+\cventry{2016-2018}{Front-end Web Developer}{Onrewind}{Bidart}{}{Front-end developer.\newline %
+	Work done \emph{(Node, React, Redux, Python, FFMPEG, and AWS)}:
+	\begin{itemize}%
+		\item Maintenance of a REST API (Node, Express).
+		\item Redesign of the administration panel (Node/React/Redux \heart).
+		\item Maintenance and improvement of web players (React).
+		\item Creation of a video processing tool (FFMPEG, Python, and Celery).
+	\end{itemize}%
+}
 \cventry{2012-2015}{Software Developer}{Kreapixel}{Prigonrieux}{}{Software Manager.\newline
 	Responsibilities:
 	\begin{itemize}
@@ -107,8 +123,9 @@
 		\item Participation in the creation of Adobe Air applications.
 	\end{itemize}
 }
-\cventry{Summer 2010}{Web Developer}{Victor Segalen University}{Bordeaux}{}{Creation of the alumni liaison website}
-\cventry{Summer 2009}{Front-end Web Developer}{EBS-ECO}{Paris}{}{Development of the company's website.}
+\cventry{Summer 2009-2010}{Web Developer}{Victor Segalen University}{Bordeaux}{}{Creation of the alumni liaison website.\newline %
+	Development of the company's (EBS-ECO) website.
+}
 \newpage
 %----------------------------------------------------------------------------------
 %            > EXPERIENCES: FORMATION
@@ -141,14 +158,12 @@
 		\item Others: Hybrid Pedagogy, Live coding, Dojo, Ice Breaker, Recruitment, Evaluation, Non-Violent Communication
 	\end{itemize}
 }
-
 %----------------------------------------------------------------------------------
 %            > EXPERIENCES: RO
 %----------------------------------------------------------------------------------
 \subsection{Operations Research}
 \cventry{2012}{University Internship}{Institute of Mathematics of Bordeaux (IMB)}{Bordeaux}{}{Study of the polyhedron of identifying codes in specific classes of graphs}
 \cventry{2011}{University Internship}{Institute of Mathematics of Bordeaux (IMB)}{Bordeaux}{}{Implementation of a cutting and branching algorithm for the minimum cost connected induced subgraph problem}
-
 %----------------------------------------------------------------------------------
 %            > EXPERIENCES: DIVERS
 %----------------------------------------------------------------------------------
@@ -164,18 +179,20 @@
 \cvline{Pedagogical}{Popularization, Hybrid pedagogy, Knowledge, skills and attitude transfer}
 \cvline{Professional insertion}{CV writing, LinkedIn, Cover letter, Skills assessment}
 \section{Development Skills}
-\subsection{Recent}
-\cventry{Since 2016}{Javascript}{Express, React, Node, Mocha, Jest, Prettier, Git, Postgre, AWS, Redux, XState, SemanticUI, MaterialUI, Tailwind}{}{}{}
+\subsection{Miscellaneous}
+\cventry{Recently}{Java}{Quarkus, RabbitMQ}{}{}{}
+\cventry{}{Javascript}{NestJS, Typescript, Webpack, Express, React, Node, Mocha, Jest, Redux, XState, Apollo, Meteor}{}{}{}
+\cventry{}{Other}{Docker, Mongo, Prettier, Git, PostgreSQL}{}{}{}
 \subsection{General}
-\cvline{Languages}{\textbf{Javascript, Python, PHP}, Go, C++, C\#, R, Autoit, \textit{Java, AS3, Fortran, SQL, Scilab}}
+\cvline{Languages}{\textbf{Javascript, Python, Java}, Go, C++, C\#, R, Autoit, \textit{PHP, AS3, Fortran, SQL, Scilab}}
 \cvline{Office software}{\LaTeX{}, Office Suite, HTML/CSS}
-\cvline{Environment}{OSX, Debian, Windows}
+\cvline{Environment}{OSX, Ubuntu, Windows}
 \cvline{VCS}{Git \heart}
 
 \section{Project management skills}
 \cvline{Management}{Meeting management, Team management, Conflict resolution, Performance appraisal}
 \cvline{Steering}{Scrum, Kanban, MoSCoW, XP, RAD}
-\cvline{Tools}{Slack, Trello, Jira, GitLab, GitHub, BitBucket}
+\cvline{Tools}{ClickUp, Slack, Trello, Jira, GitLab, GitHub, BitBucket}
 
 \section{Operational Research skills}
 \cvline{Artificial Intelligence}{Supervised neural networks, Path Finding, Ant colony, Genetic algorithm, Min-Max, Gradient descent}
@@ -198,7 +215,7 @@
 
 \section{Others}
 \cvitem{Driving License}{B}
-\cvitem{Sports}{Surfing, Snowboarding, Volleyball}
+\cvitem{Sports}{Surfing, Snowboarding, Volleyball (Coach)}
 \cvitem{Hobbies}{Reading, Video games (League of Legends, Old School games), CodingGames, OSS}
 
 %----------------------------------------------------------------------------------
@@ -206,75 +223,3 @@
 %----------------------------------------------------------------------------------
 \end{document}
 %----------------------------------------------------------------------------------
-%----------------------------------------------------------------------------------
-%----------------------------------------------------------------------------------
-%----------------------------------------------------------------------------------
-%----------------------------------------------------------------------------------
-%            EXAMPLES
-%----------------------------------------------------------------------------------
-
-% \section{Extra 1}
-% \cvlistitem{Item 1}
-% \cvlistitem{Item 2}
-% \cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
-
-% \section{Extra 2}
-% \cvlistdoubleitem{Item 1}{Item 4}
-% \cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
-% \cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
-
-% \section{References}
-% \begin{cvcolumns}
-% \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
-% \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
-% \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
-% \end{cvcolumns}
-
-% Publications from a BibTeX file without multibib
-%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
-%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
-% \nocite{*}
-% \bibliographystyle{plain}
-% \bibliography{publications}                        % 'publications' is the name of a BibTeX file
-
-% Publications from a BibTeX file using the multibib package
-%\section{Publications}
-%\nocitebook{book1,book2}
-%\bibliographystylebook{plain}
-%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
-%\nocitemisc{misc1,misc2,misc3}
-%\bibliographystylemisc{plain}
-%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
-
-% \clearpage
-% % -----       letter       ---------------------------------------------------------
-% % recipient data
-% \recipient{Service recrutement ASOBO}{ASOBO\\23 Parvis des Chartrons\\33074 Bordeaux Cedex \\ France}
-% \date{\today}
-% \opening{Cher Monsieur, Chere Madame,}
-% \closing{Très respecteusement,}
-% \enclosure[En pièce jointe]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
-% \makelettertitle
-% % \begin{sloppypar}
-% \begin{flushright}
-% \begin{flushleft}
-% % associé à une démarche et une rigueur scientifique developpé à la faculté de bordeaux
-% Jeune homme de 24 ans, dîplomé, d'un master universitaire en recherche opérationnelle, où j'ai pu acquérire de solide connaissances en mathématiques/informatique décisionnelle. En sus, diplomé d'un master profesionnelle en ingenierie logicielle, où j'ai été formé au devellopement, au management et à la conduite de projet durant deux ans. Durant ces années, j'ai eu l'occasion d'être à la fois manager, chef de projet et developpeur, en alternance entre l'entreprise et la formation.\par
-
-% Ma double formation fait de moi une personne permettant à toute entreprise où les mathématiques sont synonymes de performances, de creer le lien entre, developpeurs, chefs de projet et mathématiciens,.\par
-
-% De nature scientifique, je ne prend rien pour vrai. Ainsi, les nouvelles connaisssances sont pour moi une source de motivation intarrissable.\par
-
-% Je suis certain qu'en rejoignnant votre préstigieuse équipe, je pourrai m'épanouir et utiliser mes connaissances en informatique décisionelle (intelligence artificielle), et en mathématiques (calcul et modélisation). Et c'est à travers cet epanouiisssement que je vous apporterai ce que vous cherchez : Un developpeur dynamique et plein d'entrain qui saura s'integrer à une équipe pluridisciplinaire.\par
-% % \end{sloppypar}
-% \end{flushleft}
-% \end{flushright}
-
-
-% \makeletterclosing
-
-%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
-
-
-
-%% end of file `template.tex'.
