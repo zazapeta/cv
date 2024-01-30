@@ -1,0 +1,225 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+% \usepackage[french]{babel}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+% \usepackage[scale=0.75]{geometry}
+\usepackage{geometry}
+\geometry{hmargin=1.8cm,vmargin=1.5cm}
+\newcommand{\heart}{\ensuremath\heartsuit}
+\setlength{\hintscolumnwidth}{2cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Sami}{Ghazouane}
+\title{
+	Software Engineer \newline
+	Operations Research \newline
+	Agilist \& Pedagogy \newline
+}                               % optional, remove / comment the line if not wanted
+%\address{Numero de rue}{000000}{Country}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+33~6~95~03~09~06}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+% \phone[fixed]{+2~(345)~678~901}
+% \phone[fax]{+3~(456)~789~012}
+\email{sami.ghazouane@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{sami.ghazouane.io}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{ghazouane}                        % optional, remove / comment the line if not wanted
+\social[twitter][twitter.com/sami_ghazouane]{ghazouane}                             % optional, remove / comment the line if not wanted
+\social[github]{zazapeta}                              % optional, remove / comment the line if not wanted
+% \extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{cvPhoto}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Ensemble, le mieux n'est plus l'ennemi du bien}                                 % optional, remove / comment the line if not wanted
+
+%----------------------------------------------------------------------------------
+%            BEGIN
+%----------------------------------------------------------------------------------
+\begin{document}
+%----------------------------------------------------------------------------------
+%            TITLE
+%----------------------------------------------------------------------------------
+\makecvtitle
+%----------------------------------------------------------------------------------
+%            EXPERIENCES
+%----------------------------------------------------------------------------------
+\section{Experience}
+%----------------------------------------------------------------------------------
+%            > EXPERIENCES: DEVELOPPEMENT
+%----------------------------------------------------------------------------------
+\subsection{Development}
+\cventry{2022}{Lead Full Stack Developer}{Pytheas Capital Advisors}{Biarritz \& Paris}{}{Full Stack Developer \emph{(Quarkus, NestJS, React, ClickUp, Teams)} \newline %
+	Technologies used:
+	\begin{itemize}
+		\item Javascript: Node, NestJS, Meteor, React, Apollo, XState, Emotion, Storybook, Jest, Cypress
+		\item Java: Quarkus, JUnit, RabbitMQ
+		\item DB: Mongo, PostgreSQL
+		\item DevOps: GitLab, K8s, Docker-Compose, ArgoCD
+		\item Other: ETL, Keycloak, RabbitMQ, Artillery
+	\end{itemize}
+	Responsibilities :
+	\begin{itemize}
+		\item Development of an invoice generator \emph{Factur-X – ZUGFeRD} (Java, Quarkus, RabbitMQ, REST API).
+		\item Development of a micro-service orchestrator (TypeScript, NestJS, RabbitMQ, XState).
+		\item Development of end-to-end tests of micro-services (TypeScript, RabbitMQ, Docker, GitLab).
+		\item Front-end \& back-end development of the application (React, Meteor, Apollo, Cypress).
+		\item Writing of tests \emph{Cypress, JUnit, Jest, Mocha, ...} \& optimization of legacy requests \emph{Mongo}.
+		\item Mentorship and participation in the technical development of two developers and of the Project Owner.
+		\item Project Management in 'SCRUM' mode with ClickUp.
+	\end{itemize}
+}
+\cventry{2019-2021}{Lead Front-end Developer}{Syment}{Bayonne}{\emph{Remote work}}{Front-end Developer and Project Manager \emph{(React, Redux, XState, Tailwind, Storybook, Jest, Jira, Slack)}\newline
+	Responsibilities :
+	\begin{itemize}
+		\item Refactored a Front-end application from Symfony/Twig to React.
+		\item Developed a full-stack ZOOM widget.
+		\item Managed the project using SCRUM methodologies on Jira.
+		\item Supervised and participated in the technical advancement of two web developers.
+	\end{itemize}
+}
+\cventry{2019}{Adviser and Lead Developer}{Expateo}{Bidart}{\emph{Remote work}}{Full-stack Developer \emph{(Node, React, Docker).} \newline
+	Responsibilities :
+	\begin{itemize}
+		\item Refactored a front-end application from Angular to React.
+		\item Led the migration of a PHP API to Node.
+		\item Implemented TDD in the technical team to stabilize CI/CD.
+		\item Supervised and participated in the technical advancement of two junior web developers.
+		\item Conducted individual technical interviews with consultants.
+		\item Participated in the implementation and broadcast of security guidelines.
+	\end{itemize}
+}
+\cventry{2018}{Hybrid Web Developer}{Glorytech}{Bidart}{}{Full-stack Developer \emph{(Node, React, Cordova, Docker).}}
+% \cventry{2018}{Développeur web front-end}{Ariane Avocats}{Remote (Bidart - Bergerac)}{}{Développement du site vitrine du cabinet d'avocats.}
+\cventry{2016-2018}{Front-end Web Developer}{Onrewind}{Bidart}{}{Front-end developer.\newline %
+	Work done \emph{(Node, React, Redux, Python, FFMPEG, and AWS)}:
+	\begin{itemize}%
+		\item Maintenance of a REST API (Node, Express).
+		\item Redesign of the administration panel (Node/React/Redux \heart).
+		\item Maintenance and improvement of web players (React).
+		\item Creation of a video processing tool (FFMPEG, Python, and Celery).
+	\end{itemize}%
+}
+\cventry{2012-2015}{Software Developer}{Kreapixel}{Prigonrieux}{}{Software Manager.\newline
+	Responsibilities:
+	\begin{itemize}
+		\item Creation of a multi-media, multi-platform player (C\#).
+		\item Creation of an automatic software deployment manager for Windows (PHP, AutoIt).
+		\item Creation of a third-party software installer creator for Windows (AutoIt).
+		\item Participation in the creation of Adobe Air applications.
+	\end{itemize}
+}
+\cventry{Summer 2009-2010}{Web Developer}{Victor Segalen University}{Bordeaux}{}{Creation of the alumni liaison website.\newline %
+	Development of the company's (EBS-ECO) website.
+}
+\newpage
+%----------------------------------------------------------------------------------
+%            > EXPERIENCES: FORMATION
+%----------------------------------------------------------------------------------
+\subsection{Training}
+\cventry{2018-2019}{Trainer JS(React/Node) \& PHP(Symfony 4)}{Wild Code School}{Bidart}{}{Full Stack Trainer.\newline %
+	Sessions completed:
+	\begin{itemize}%
+		\item From June to September, short session: Group of 10 Junior Javascript web developers.
+		\item From October to December, short session: Group of 10 Junior PHP web developers.
+		\item From February to July, long session: Group of 27 Junior Javascript web developers.
+	\end{itemize}%
+	Responsibilities \emph{(Node, React, PHP, Symfony 4, AGILE, Individual Interviews)} :
+	\begin{itemize}
+		\item Supervision of teams dedicated to client projects.
+		\item Supervision and monitoring of the pedagogical team on the 5 month training. \emph{Participation in the technical and pedagogical improvement of my colleagues.}
+		\item Many (100+) individual technical interviews of candidates.
+		\item Individual interviews of students.
+		\item Organization of many \emph{live coding, dojo, hackathon} and various workshops on React, Node, Symfony or Python.
+	\end{itemize}
+	Skills Transferred:
+	\begin{itemize}
+		\item Project Management: Agile, Scrum, Kanban, MoSCoW, Kaizen
+		\item Clean Code: Git, Unix, Tests, CI/CD, Design Patterns
+		\item Theories: Graph Theory, Algorithm, Object-Oriented Programming, Functional Programming
+		\item Languages: Javascript, PHP, Python, Solidity
+		\item Front-end: React, Redux, Back-end, DevOps, CI/CD
+		\item Back-end: Node, Express, Mocha, Sequelize, SQL
+		\item DevOps: Netlify, Heroku, Docker, Docker-compose, Traefik
+		\item Others: Hybrid Pedagogy, Live coding, Dojo, Ice Breaker, Recruitment, Evaluation, Non-Violent Communication
+	\end{itemize}
+}
+%----------------------------------------------------------------------------------
+%            > EXPERIENCES: RO
+%----------------------------------------------------------------------------------
+\subsection{Operations Research}
+\cventry{2012}{University Internship}{Institute of Mathematics of Bordeaux (IMB)}{Bordeaux}{}{Study of the polyhedron of identifying codes in specific classes of graphs}
+\cventry{2011}{University Internship}{Institute of Mathematics of Bordeaux (IMB)}{Bordeaux}{}{Implementation of a cutting and branching algorithm for the minimum cost connected induced subgraph problem}
+%----------------------------------------------------------------------------------
+%            > EXPERIENCES: DIVERS
+%----------------------------------------------------------------------------------
+\subsection{Miscellaneous}
+\cventry{2015-2021}{Freelance Web Development}{}{}{}{Corporate websites, E-commerce websites, Training, Consulting}
+\cventry{2007-2012}{Student Jobs}{Multiple}{Bordeaux}{}{Harvesting, Server, Private math teacher, Receptionist, Radio host, Leaflet distributor, Surf instructor}
+%----------------------------------------------------------------------------------
+%            SKILLS
+%----------------------------------------------------------------------------------
+% \newpage
+\section{Training Skills}
+\cvline{Interpersonal}{Team spirit, Active listening, Non-violent communication, Conflict resolution}
+\cvline{Pedagogical}{Popularization, Hybrid pedagogy, Knowledge, skills and attitude transfer}
+\cvline{Professional insertion}{CV writing, LinkedIn, Cover letter, Skills assessment}
+\section{Development Skills}
+\subsection{Miscellaneous}
+\cventry{Recently}{Java}{Quarkus, RabbitMQ}{}{}{}
+\cventry{}{Javascript}{NestJS, Typescript, Webpack, Express, React, Node, Mocha, Jest, Redux, XState, Apollo, Meteor}{}{}{}
+\cventry{}{Other}{Docker, Mongo, Prettier, Git, PostgreSQL}{}{}{}
+\subsection{General}
+\cvline{Languages}{\textbf{Javascript, Python, Java}, Go, C++, C\#, R, Autoit, \textit{PHP, AS3, Fortran, SQL, Scilab}}
+\cvline{Office software}{\LaTeX{}, Office Suite, HTML/CSS}
+\cvline{Environment}{OSX, Ubuntu, Windows}
+\cvline{VCS}{Git \heart}
+
+\section{Project management skills}
+\cvline{Management}{Meeting management, Team management, Conflict resolution, Performance appraisal}
+\cvline{Steering}{Scrum, Kanban, MoSCoW, XP, RAD}
+\cvline{Tools}{ClickUp, Slack, Trello, Jira, GitLab, GitHub, BitBucket}
+
+\section{Operational Research skills}
+\cvline{Artificial Intelligence}{Supervised neural networks, Path Finding, Ant colony, Genetic algorithm, Min-Max, Gradient descent}
+\cvline{Optimization}{Linear, combinatorial, nonlinear, constraint-based}
+\cvline{Algorithms}{Complexity, Metaheuristics, Distributed}
+\cvline{Other}{Graph theory, Queueing, Data analysis, PORTA, AMPL}
+
+%----------------------------------------------------------------------------------
+%            DIPLOMES
+%----------------------------------------------------------------------------------
+\section{Diplomas}
+\cventry{2012-2014}{Master in Software Engineering}{Cesi-entreprises}{Blanquefort}{}{Formation in software engineering. \newline Keywords: Management, Project management, AGILE, RAD, Software architecture}
+\cventry{2010-2012}{Master in Computer Science and Operations Research}{University of Bordeaux}{Bordeaux}{}{Formation in decisional computer science. \newline Keywords: Operations research, Modelling, Decision support, Artificial intelligence, Meta-heuristics} % arguments 3 to 6 can be left empty
+\cventry{2007-2010}{Bachelor's in Applied Mathematics and Social Sciences}{University of Bordeaux}{Bordeaux}{}{Multidisciplinary formation. \newline Keywords: Mathematics, Programming, Economics, Cognitive Sciences}
+
+\section{Languages}
+\cvitemwithcomment{French}{Native}{}
+\cvitemwithcomment{English}{Good Technical Skills}{I wrote my master thesis in English.}
+\cvitemwithcomment{Arabic}{Dialectal}{}
+
+\section{Others}
+\cvitem{Driving License}{B}
+\cvitem{Sports}{Surfing, Snowboarding, Volleyball (Coach)}
+\cvitem{Hobbies}{Reading, Video games (League of Legends, Old School games), CodingGames, OSS}
+
+%----------------------------------------------------------------------------------
+%            END
+%----------------------------------------------------------------------------------
+\end{document}
+%----------------------------------------------------------------------------------
