@@ -1,0 +1,168 @@
+%% start of file `template.tex'.
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+% \usepackage[french]{babel}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+% \usepackage[scale=0.75]{geometry}
+\usepackage{geometry}
+\geometry{hmargin=1.8cm,vmargin=1.5cm}
+\newcommand{\heart}{\ensuremath\heartsuit}
+\setlength{\hintscolumnwidth}{2cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Sami}{Ghazouane}
+\title{
+    Formateur Développement Fullstack \newline
+	Développeur Fullstack JAVA/TS
+}                               % optional, remove / comment the line if not wanted
+\address{Saint Jean de Luz, France}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+33~6~95~03~09~06}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+% \phone[fixed]{+2~(345)~678~901}
+% \phone[fax]{+3~(456)~789~012}
+\email{sami.ghazouane@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{sami.ghazouane.io}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{ghazouane}                        % optional, remove / comment the line if not wanted
+% \social[twitter][twitter.com/sami_ghazouane]{ghazouane}                             % optional, remove / comment the line if not wanted
+\social[github]{zazapeta}                              % optional, remove / comment the line if not wanted
+% \extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{cvPhoto}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Ensemble, le mieux n'est plus l'ennemi du bien}                                 % optional, remove / comment the line if not wanted
+
+%----------------------------------------------------------------------------------
+%            BEGIN
+%----------------------------------------------------------------------------------
+\begin{document}
+%----------------------------------------------------------------------------------
+%            TITLE
+%----------------------------------------------------------------------------------
+\makecvtitle
+%----------------------------------------------------------------------------------
+%            EXPERIENCES
+%----------------------------------------------------------------------------------
+\section{Expériences}
+%----------------------------------------------------------------------------------
+%            > EXPERIENCES: FORMATION
+%----------------------------------------------------------------------------------
+\subsection{Formation}
+\cventry{2018-2019}{Trainer JS(React/Node) \& PHP(Symfony 4)}{Wild Code School}{Bidart}{}{Formateur Full Stack.\newline %
+	Sessions effectuées:
+	\begin{itemize}%	
+		\item De Juin à Septembre, session courte: Groupe de 10 développeurs web junior Javascript.
+		\item De Octobre à Décembre, session courte: Groupe de 10 développeurs web junior PHP.
+		\item De Février à Juillet, session longue: Groupe de 27 développeurs web junior Javascript.
+	\end{itemize}%
+	Travaux effectués \emph{(Node, React, PHP, Symfony 4, AGILE, Entretiens individuels)} :
+	\begin{itemize}
+		\item Encadrement d'équipes dédiées à des projets clients.
+		\item Encadrement et suivis de l'équipe pédagogique sur la formation de 5 mois. \emph{Participation à la montée en compétence (technique et pédagogique) de mes collaborateurs.}
+		\item Nombreux (100+) entretiens techniques individuels de candidats.
+		\item Entretiens individuels des élèves.
+		\item Organisation de nombreux \emph{live coding, dojo, hackathon} et divers ateliers sur React, Node, Symfony ou encore Python.
+	\end{itemize}
+	Compétences transmises :
+	\begin{itemize}
+		\item Gestion de projet: Agile, Scrum, Kanban, MoSCoW, Kaïzen
+		\item Clean Code: Git, Unix, Tests, CI/CD, Design Pattern
+		\item Théories: Théorie des Graphes, Algorithmie, Programmation Orientée Objet, Programmation Fonctionnel
+		\item Languages: Javascript, PHP, Python, Solidity
+		\item Front: React, Redux, Back,  DevOps, CI/CD
+		\item Back: Node, Express, Mocha, Sequelize, SQL
+		\item DevOps: Netlify, Heroku, Docker, Docker-compose, Traefik
+		\item Autres: Pédagogie Hybride, Live coding, Dojo, Ice Breaker, Recrutement, Evaluation, Communication Non Violente
+	\end{itemize}
+}
+%----------------------------------------------------------------------------------
+%            > EXPERIENCES: DEVELOPPEMENT
+%----------------------------------------------------------------------------------
+\subsection{Développement}
+\cventry{2024--2025}{Développeur Fullstack Java/React}{Groupe Seldon}{Bidart}{}{
+Refonte d’applications internes, mise en place API REST/RPC sécurisée avec Keycloak et intégration d’Apache Camel. Référent qualité et bonnes pratiques de développement.}
+
+\cventry{2022}{Lead Développeur Fullstack}{Pytheas Capital Advisors}{Biarritz \& Paris}{}{
+Pilotage et développement d’un orchestrateur de micro-services (NestJS/Quarkus). Encadrement de développeurs et diffusion de pratiques agiles.}
+
+\cventry{2019--2021}{Lead Développeur Front}{Syment}{Bayonne, Télétravail}{}{
+Refonte complète d’une application (Symfony/Twig vers React). Tutorat et montée en compétence de deux développeurs juniors.}
+
+\cventry{2019}{Lead Développeur}{Expateo}{Bidart, Télétravail}{}{
+Migration front Angular vers React et API PHP vers Node. Mise en place de TDD et mentoring technique.}
+
+\cventry{2016--2018}{Développeur Frontend}{Onrewind}{Bidart}{}{
+Maintenance et refonte du panel d’administration (React/Redux). Développement d’outils vidéo (Python/FFMPEG).}
+
+\cventry{2012--2015}{Développeur Logiciel}{Kreapixel}{Prigonrieux}{}{
+Développement d’outils logiciels (C\#, PHP). Responsable technique.}
+%----------------------------------------------------------------------------------
+%            DIPLOMES
+%----------------------------------------------------------------------------------
+\newpage
+\section{Diplômes}
+\cventry{2012--2014}{Master Responsable Ingénierie Logicielle}{Cesi-entreprises}{Blanquefort}{}{Formation en ingénierie logicielle. \newline Mots-Clefs : Management, Chef de projet, AGILE, RAD, Architecture logicielle}
+\cventry{2010--2012}{Master Informatique et Recherche Opérationnelle}{Université de Bordeaux}{Bordeaux}{}{Formation en informatique décisionnelle. \newline Mots-Clefs : Recherche opérationnelle, Modélisation, Aide à la décision, Intelligence artificielle, Méta-heuristique}  % arguments 3 to 6 can be left empty
+\cventry{2007--2010}{Licence Mathématiques Appliquées et Sciences Sociales}{Université de Bordeaux}{Bordeaux}{}{Formation pluridisciplinaire. \newline Mots-Clefs : Mathématiques, Programmation, Économie, Sciences cognitives}
+
+
+
+\newpage
+%----------------------------------------------------------------------------------
+%            SKILLS
+%----------------------------------------------------------------------------------
+% \newpage
+\section{Compétences Humaines}
+\cvline{Relationnelles}{Esprit d'équipe, Ecoute active, Communication-Non-Violente, Résolution de conflits}
+\cvline{Pédagogiques}{Vulgarisation, Pédagogie hybride, Transmission de savoir}
+
+\section{Compétences en Développement}
+\subsection{En vrac}
+\cventry{Récemment}{Java}{Quarkus, RabbitMQ}{}{}{}
+\cventry{}{Javascript}{NestJS, Typescript, Webpack, Express, React, Node, Mocha, Jest, Redux, XState, Apollo, Meteor}{}{}{}
+\cventry{}{Autre}{Docker, Mongo, Prettier, Git, PostgreSQL}{}{}{}
+
+\subsection{Générales}
+\cvline{Langages}{\textbf{Javascript, Python, Java}, Go, C++, C\#, R, Autoit, \textit{PHP, AS3, Fortran, SQL, Scilab}}
+\cvline{Bureautique}{\LaTeX{}, Suites Office, HTML/CSS}
+\cvline{Environnement}{OSX, Ubuntu, Windows}
+\cvline{VCS}{Git \heart}
+
+\section{Compétences de Gestion de Projet}
+\cvline{Management}{Conduite de réunion, Animation d'équipe, Gestion des conflits, Entretien d'évaluation}
+\cvline{Pilotage}{Scrum, Kanban, MoSCoW, XP, RAD}
+\cvline{Outils}{ClickUp, Teams, Slack, Trello, Jira, GitLab, GitHub, BitBucket}
+
+\section{Compétences de Recherche Opérationnelle}
+\cvline{Intelligence artificielle}{Réseaux de neurones supervisés, Path Finding, Colonie de fourmis, Algortihme Génétique, Min-Max, Descente de gradient}
+\cvline{Optimisation}{Programmation linéaire, combinatoire, non linéaire, par contrainte}
+\cvline{Algorithmique}{Complexité, Méta-heuristique, Distribuée}
+\cvline{Autre}{Théorie des graphes, File d'attente, Analyse de données, PORTA, AMPL}
+
+\section{Langues}
+\cvitemwithcomment{Français}{Langue Maternelle}{}
+\cvitemwithcomment{English}{Good Technical Skills}{I wrote my master thesis in english.}
+\cvitemwithcomment{Arabe}{Dialectal}{}
+
+\section{Autres}
+\cvitem{Permis}{B}
+\cvitem{Sports}{Surf, Kempo, Volley-ball (Coach)}
+\cvitem{Loisirs}{Lecture, Echecs, CodingGames, OSS}
+
+%----------------------------------------------------------------------------------
+%            END
+%----------------------------------------------------------------------------------
+\end{document}
